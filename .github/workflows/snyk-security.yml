@@ -58,8 +58,9 @@ jobs:
         run: mvn install # install maven
 
       - name: Authenticate Snyk CLI
-      - run: snyk -v
-      - run: snyk auth ${{ secrets.SNYK_TOKEN }} # snyk authentication using GH secrets    
+        run: |
+          snyk -v
+          snyk auth ${{ secrets.SNYK_TOKEN }} # snyk authentication using GH secrets
 
         # Runs Snyk Code (SAST) analysis and uploads result into GitHub.
         # Use || true to not fail the pipeline
