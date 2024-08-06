@@ -15,10 +15,3 @@
 
 # Andrew owns all files under "/web/assets" directory at the repository root and all its subdirectories
 #/web/assets/ Andrew.Nelson
-
-# All members who are assigned the Project Collaborator role own any file under docs/ directory
-# anywhere in the repository, but not further nested files
-#docs/* "Project Collaborator"
-
-# This file itself is owned by members who are assigned the Project Admin role in this project.
-CODEOWNERS "Admin"
